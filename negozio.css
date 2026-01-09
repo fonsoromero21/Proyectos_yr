@@ -1,0 +1,48 @@
+/* Estilos compartidos de variables */
+:root {
+  --accent: #3bcc75;
+  --cta: #ffc845;
+  --bg-dark: #252525;
+  --cream: #f7efe6;
+  --muted: #000000;
+  --card-bg: #ffffff;
+}
+
+/* Hero section style (same as menu.css) */
+.hero {
+  background: linear-gradient(135deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.3)),
+              url("images/tt1.jpg") center/cover no-repeat;
+  padding: 60px 20px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  text-align: center;
+  min-height: 40vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 7.2rem;
+}
+
+.hero h1 {
+  font-size: 40px;
+  margin: 0;
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: 900;
+}
+
+.subtitle {
+  color: #ccc;
+  margin-top: 8px;
+  font-size: 1.2rem;
+}
+
+/* Styles specific to negozio page */
+body.page-negozio main.container { padding:40px 24px; }
+.biz-card { max-width:760px; margin:0 auto; background:var(--card-bg); padding:28px; border-radius:10px; box-shadow:0 8px 24px rgba(0,0,0,0.06); }
+.biz-card h2 { color:var(--accent);margin-bottom:12px; font-size: 1.8rem; }
+.biz-card p { color:var(--muted); line-height:1.8; margin-bottom:16px; font-size: 1rem; }
+.biz-card img { width:100%; max-width:720px; height:auto; object-fit:cover; border-radius:8px; display:block; margin:20px auto; }
+.biz-card h3 { margin-top:20px; color:var(--accent); font-size: 1.4rem; }
+.biz-card p.lead { color:var(--muted); line-height:1.8; margin-bottom:12px; font-size: 1rem; }

@@ -1,0 +1,92 @@
+/* Estilos compartidos de variables */
+:root {
+  --accent: #3bcc75;
+  --cta: #ffc845;
+  --bg-dark: #252525;
+  --cream: #f7efe6;
+  --muted: #000000;
+  --card-bg: #ffffff;
+}
+
+/* Hero section style (same as menu.css) */
+.hero {
+  background: linear-gradient(135deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.3)),
+              url("images/tt1.jpg") center/cover no-repeat;
+  padding: 60px 20px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  text-align: center;
+  min-height: 40vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 7.2rem;
+}
+
+.hero h1 {
+  font-size: 40px;
+  margin: 0;
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: 900;
+}
+
+.subtitle {
+  color: #ccc;
+  margin-top: 8px;
+  font-size: 1.2rem;
+}
+
+/* Styles specific to noticias page */
+body main.container {
+  padding: 40px 24px;
+}
+
+.news-section {
+  max-width: 900px;
+  margin: 0 auto;
+  background: var(--card-bg);
+  padding: 28px;
+  border-radius: 10px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.06);
+}
+
+.news-section h2 {
+  color: var(--accent);
+  margin-bottom: 20px;
+  font-size: 1.8rem;
+}
+
+article {
+  margin-bottom: 24px;
+  padding-bottom: 24px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+article h3 {
+  color: var(--accent);
+  margin-bottom: 8px;
+  font-size: 1.4rem;
+}
+
+article p {
+  color: var(--muted);
+  margin-bottom: 12px;
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+article img {
+  width: 100%;
+  max-height: 300px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-top: 12px;
+}
+
+@media (max-width: 768px) {
+  .news-section {
+    padding: 20px;
+  }
+}

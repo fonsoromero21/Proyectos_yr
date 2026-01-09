@@ -1,0 +1,196 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Menú — Restaurante</title>
+  <link rel="stylesheet" href="style1.css">
+  <link rel="stylesheet" href="menu.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
+  <meta name="description" content="Menú clásico italiano — Antipasti, Primi, Secondi, Pizzas, Postres, Bebidas">
+</head>
+<body>
+  <header>
+    <div class="container">
+      <nav class="nav">
+        <div class="menu-toggle">
+          <i class="fas fa-bars"></i>
+          <i class="fas fa-times"></i>
+        </div>
+        <a href="index.html" class="logo">LOGO</a>
+        <ul class="nav-list">
+          <li class="nav-item">
+            <a href="index.html" class="nav-link">Inizio</a>
+          </li>
+          <li class="nav-item">
+            <a href="menu.html" class="nav-link active">Menu</a>
+          </li>
+          <li class="nav-item">
+            <a href="reservas.html" class="nav-link">Prenotazioni</a>
+          </li>
+          <li class="nav-item">
+            <a href="noticias.html" class="nav-link">Notizie</a>
+          </li>
+          <li class="nav-item">
+            <a href="negozio.html" class="nav-link">Negozio</a>
+          </li>
+          <li class="nav-item">
+            <a href="contacto.html" class="nav-link">Contatto</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="container">
+      <h1>Menu</h1>
+      <p class="subtitle">Classici italiani preparati con amore</p>
+    </div>
+  </section>
+
+  <main class="container">
+    <nav class="tabs" aria-label="Filtrar por categoría">
+      <button class="tab active" data-cat="all">Tutto</button>
+      <button class="tab" data-cat="antipasti">Antipasti</button>
+      <button class="tab" data-cat="primi">Primi Piatti</button>
+      <button class="tab" data-cat="secondi">Secondi Piatti</button>
+      <button class="tab" data-cat="pizzas">Pizzas</button>
+      <button class="tab" data-cat="postres">Postres</button>
+      <button class="tab" data-cat="bebidas">Bebidas</button>
+    </nav>
+
+    <section class="menu-grid" id="menu">
+
+      <article class="dish" data-category="antipasti">
+        <img src="images/brucheta.jpg" alt="Bruschetta" class="dish-img">
+        <div class="dish-body">
+          <h3 class="dish-name">Bruschetta al Pomodoro</h3>
+          <p class="dish-desc">Pane tostato con pomodoro maturo, aglio, basilico e olio extravergine di oliva.</p>
+          <span class="dish-price">€6.50</span>
+        </div>
+      </article>
+
+      <article class="dish" data-category="antipasti">
+        <img src="images/carpacho.jpg" alt="Carpaccio" class="dish-img">
+        <div class="dish-body">
+          <h3 class="dish-name">Carpaccio di Manzo</h3>
+          <p class="dish-desc">Fette sottili di manzo con rucola, parmigiano e olio agli agrumi.</p>
+          <span class="dish-price">€12.00</span>
+        </div>
+      </article>
+
+      <article class="dish" data-category="primi">
+        <img src="images/carbonara.jpg" alt="Spaghetti" class="dish-img">
+        <div class="dish-body">
+          <h3 class="dish-name">Spaghetti alla Carbonara</h3>
+          <p class="dish-desc">Classica carbonara romana con uovo, pecorino e guanciale.</p>
+          <span class="dish-price">€14.50</span>
+        </div>
+      </article>
+
+      <article class="dish" data-category="primi">
+        <img src="images/risotto.jpg" alt="Risotto" class="dish-img">
+        <div class="dish-body">
+          <h3 class="dish-name">Risotto ai Funghi</h3>
+          <p class="dish-desc">Risotto cremoso con funghi selvatici e un tocco di tartufo.</p>
+          <span class="dish-price">€15.00</span>
+        </div>
+      </article>
+
+      <article class="dish" data-category="secondi">
+        <img src="images/saltimbocca.jpg" alt="Saltimbocca" class="dish-img">
+        <div class="dish-body">
+          <h3 class="dish-name">Saltimbocca alla Romana</h3>
+          <p class="dish-desc">Vitello, prosciutto e salvia in salsa di vino bianco.</p>
+          <span class="dish-price">€18.50</span>
+        </div>
+      </article>
+
+      <article class="dish" data-category="secondi">
+        <img src="images/pollo al limone.jpg" alt="Pollo" class="dish-img">
+        <div class="dish-body">
+          <h3 class="dish-name">Pollo al Limone</h3>
+          <p class="dish-desc">Petto di pollo in una salsa leggera al limone e alle erbe aromatiche.</p>
+          <span class="dish-price">€16.00</span>
+        </div>
+      </article>
+
+      <article class="dish" data-category="pizzas">
+        <img src="images/pizza.jpg" alt="Margherita" class="dish-img">
+        <div class="dish-body">
+          <h3 class="dish-name">Pizza Margherita</h3>
+          <p class="dish-desc">Pomodoro San Marzano, mozzarella, basilico e olio d'oliva.</p>
+          <span class="dish-price">€10.00</span>
+        </div>
+      </article>
+
+      <article class="dish" data-category="pizzas">
+        <img src="images/quattro.jpg" alt="Quattro Formaggi" class="dish-img">
+        <div class="dish-body">
+          <h3 class="dish-name">Quattro Formaggi</h3>
+          <p class="dish-desc">Mozzarella, gorgonzola, pecorino y taleggio.</p>
+          <span class="dish-price">€12.50</span>
+        </div>
+      </article>
+
+      <article class="dish" data-category="postres">
+        <img src="images/tiramisu.jpg" alt="Tiramisú" class="dish-img">
+        <div class="dish-body">
+          <h3 class="dish-name">Tiramisú della Casa</h3>
+          <p class="dish-desc">Tiramisù classico con caffè espresso e crema al mascarpone.</p>
+          <span class="dish-price">€7.00</span>
+        </div>
+      </article>
+
+      <article class="dish" data-category="postres">
+        <img src="images/panna cotta.jpg" alt="Panna Cotta" class="dish-img">
+        <div class="dish-body">
+          <h3 class="dish-name">Panna Cotta al Vainiglia</h3>
+          <p class="dish-desc">Panna cotta liscia con riduzione di frutti rossi.</p>
+          <span class="dish-price">€6.50</span>
+        </div>
+      </article>
+
+      <article class="dish" data-category="bebidas">
+        <div class="dish-body no-img">
+          <h3 class="dish-name">Selezione di vini</h3>
+          <p class="dish-desc">Vini bianchi e rossi selezionati al bicchiere o in bottiglia.</p>
+          <span class="dish-price">Da €4.50</span>
+        </div>
+      </article>
+
+      <article class="dish" data-category="bebidas">
+        <div class="dish-body no-img">
+          <h3 class="dish-name">Caffè &amp; Digestivos</h3>
+          <p class="dish-desc">Espresso, cappuccino, limoncello e amaro.</p>
+          <span class="dish-price">Da €2.00</span>
+        </div>
+      </article>
+
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <p>© Ristorante — Menù Classico Italiano</p>
+    </div>
+  </footer>
+
+  <script src="script-menu.js"></script>
+  <script>
+    // Simple tab/filter script
+    document.querySelectorAll('.tab').forEach(btn => {
+      btn.addEventListener('click', () => {
+        document.querySelectorAll('.tab').forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
+        const cat = btn.dataset.cat;
+        document.querySelectorAll('.dish').forEach(d => {
+          if (cat === 'all' || d.dataset.category === cat) d.style.display = '';
+          else d.style.display = 'none';
+        });
+      });
+    });
+  </script>
+</body>
+</html>

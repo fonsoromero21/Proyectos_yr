@@ -1,0 +1,128 @@
+/* Estilos compartidos de variables */
+:root {
+  --accent: #3bcc75;
+  --cta: #ffc845;
+  --bg-dark: #252525;
+  --cream: #f7efe6;
+  --muted: #000000;
+  --card-bg: #ffffff;
+}
+
+/* Styles specific to contacto page */
+.dis-sto {
+  padding: 40px 24px;
+}
+
+.res-info {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.res-des {
+  background: var(--card-bg);
+  padding: 28px;
+  border-radius: 10px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.06);
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.res-des h1,
+.res-des h2 {
+  color: var(--accent);
+  font-size: 1.8rem;
+  margin-bottom: 12px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.res-des p {
+  color: var(--muted);
+  margin-bottom: 16px;
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+.res-des strong {
+  color: var(--accent);
+  font-weight: 700;
+}
+
+.global {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.circle {
+  color: var(--accent);
+  font-size: 1.2rem;
+  margin: 12px 0;
+}
+
+.social-icons {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  align-items: flex-start;
+}
+
+.social-icons li {
+  width: 100%;
+}
+
+.social-icons a {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  color: var(--accent);
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.3s;
+}
+
+.social-icons a:hover {
+  color: var(--cta);
+}
+
+.social-icons i {
+  font-size: 1.5rem;
+}
+
+.btn {
+  display: inline-block;
+  text-decoration: none;
+  padding: 12px 24px;
+  border-radius: 6px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  transition: all 0.3s;
+  margin-top: 12px;
+}
+
+.cta-btn {
+  background-color: var(--cta);
+  color: #fff;
+}
+
+.cta-btn:hover {
+  background-color: var(--accent);
+  color: #fff;
+}
+
+@media (min-width: 768px) {
+  .res-info {
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+  }
+
+  .res-des {
+    flex: 1;
+    max-width: 400px;
+  }
+}

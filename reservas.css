@@ -1,0 +1,54 @@
+/* Estilos compartidos de variables */
+:root {
+  --accent: #3bcc75;
+  --cta: #ffc845;
+  --bg-dark: #252525;
+  --cream: #f7efe6;
+  --muted: #000000;
+  --card-bg: #ffffff;
+}
+
+/* Hero section style (same as menu.css) */
+.hero {
+  background: linear-gradient(135deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.3)),
+              url("images/tt1.jpg") center/cover no-repeat;
+  padding: 60px 20px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  text-align: center;
+  min-height: 40vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 7.2rem;
+}
+
+.hero h1 {
+  font-size: 40px;
+  margin: 0;
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: 900;
+}
+
+.subtitle {
+  color: #ccc;
+  margin-top: 8px;
+  font-size: 1.2rem;
+}
+
+/* Styles specific to reservas page */
+body.page-reservas main.container { padding:40px 24px; }
+.reserva-card { max-width:900px; margin:0 auto; background:var(--card-bg); padding:28px; border-radius:10px; box-shadow:0 8px 24px rgba(0,0,0,0.06); position:relative; z-index:50; border:2px solid rgba(59,188,117,0.3); }
+.reserva-card h2 { color:var(--accent); margin-bottom:16px; font-size: 1.8rem; }
+.reserva-card p { color:var(--muted); margin-bottom:18px; font-size: 1rem; }
+.reserva-card input[type="text"], .reserva-card input[type="email"], .reserva-card input[type="tel"], .reserva-card input[type="datetime-local"] { width:100%; padding:12px; border-radius:6px; border:1px solid #ddd; font-size: 0.95rem; }
+.reserva-actions { display:flex; gap:12px; align-items:center; }
+#saveBtn.cta-btn { background-color:var(--cta); border:none; padding:12px 18px; border-radius:6px; color:#fff; font-weight:700; cursor: pointer; }
+#formMessage { color: #d32f2f; font-weight: 600; margin-bottom: 12px; min-height: 20px; }
+#confirmOverlay { display:none; position:fixed; inset:0; background:rgba(0,0,0,0.5); align-items:center; justify-content:center; z-index:2000; }
+#confirmOverlay .confirm-box { background:var(--card-bg); padding:28px; border-radius:12px; max-width:520px; margin:16px; text-align:center; box-shadow:0 12px 40px rgba(0,0,0,0.2); }
+#confirmOverlay .confirm-box h3 { color:var(--accent);margin-bottom:12px; font-size: 1.4rem; }
+#confirmOverlay .confirm-box p { color:var(--muted); margin-bottom:18px; font-size: 1rem; }
+#confirmOverlay .confirm-box button { background:var(--accent); color:#fff; padding:12px 18px; border-radius:8px; border:none; font-weight:700; cursor: pointer; }

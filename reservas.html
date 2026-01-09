@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Reservas — Restaurante</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
+  <link rel="stylesheet" href="style1.css">
+  <link rel="stylesheet" href="reservas.css">
+</head>
+<body class="page-reservas">
+  <header>
+    <div class="container">
+      <nav class="nav">
+        <div class="menu-toggle">
+          <i class="fas fa-bars"></i>
+          <i class="fas fa-times"></i>
+        </div>
+        <a href="index.html" class="logo">LOGO</a>
+        <ul class="nav-list">
+          <li class="nav-item">
+            <a href="index.html" class="nav-link">Inizio</a>
+          </li>
+          <li class="nav-item">
+            <a href="menu.html" class="nav-link">Menu</a>
+          </li>
+          <li class="nav-item">
+            <a href="reservas.html" class="nav-link active">Prenotazioni</a>
+          </li>
+          <li class="nav-item">
+            <a href="noticias.html" class="nav-link">Notizie</a>
+          </li>
+          <li class="nav-item">
+            <a href="negozio.html" class="nav-link">Negozio</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">Contatto</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="container">
+      <h1>Prenotazioni</h1>
+      <p class="subtitle">Prenota il tuo tavolo: facile e veloce</p>
+    </div>
+  </section>
+
+  <main class="container">
+    <section class="reserva-form" aria-labelledby="reserva-title">
+      <div class="reserva-card">
+        <h2 id="reserva-title">Effettua la tua prenotazione</h2>
+        <p>Compila il modulo e riceverai una conferma visiva al momento dell'invio.</p>
+
+        <form id="bookingForm" novalidate>
+          <div style="display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-bottom:12px">
+            <div>
+              <label for="name">Nombre</label>
+              <input id="name" name="name" type="text" required placeholder="Tu nombre">
+            </div>
+            <div>
+              <label for="lastname">Apellido</label>
+              <input id="lastname" name="lastname" type="text" required placeholder="Tu apellido">
+            </div>
+          </div>
+
+          <div style="display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-bottom:12px">
+            <div>
+              <label for="email">Correo electrónico</label>
+              <input id="email" name="email" type="email" required placeholder="tu@ejemplo.com">
+            </div>
+            <div>
+              <label for="phone">Número de teléfono</label>
+              <input id="phone" name="phone" type="tel" required placeholder="+34 600 000 000">
+            </div>
+          </div>
+
+          <div style="display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-bottom:12px">
+            <div>
+              <label for="dni">DNI / Pasaporte</label>
+              <input id="dni" name="dni" type="text" required placeholder="12345678A">
+            </div>
+            <div>
+              <label for="datetime">Fecha y hora</label>
+              <input id="datetime" name="datetime" type="datetime-local" required>
+            </div>
+          </div>
+
+          <div class="reserva-actions">
+            <button type="submit" id="saveBtn" class="cta-btn">Guardar</button>
+            <div id="formMessage" aria-live="polite"></div>
+          </div>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <p>© Restaurante — Reservas</p>
+    </div>
+  </footer>
+
+  
+  <div id="confirmOverlay" role="dialog" aria-modal="true">
+    <div class="confirm-box">
+      <h3>Reserva recibida</h3>
+      <p id="confirmText">Gracias — hemos recibido tu solicitud de reserva.</p>
+      <button id="confirmClose">Cerrar</button>
+    </div>
+  </div>
+
+  <script src="reservas.js"></script>
+</body>
+</html>
